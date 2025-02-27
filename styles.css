@@ -86,20 +86,19 @@ header {
   max-width: 100%;
   padding: 0 40px; /* Wider padding for spacing */
   font-family: 'Roboto', sans-serif; /* Sleek font */
+  height: 60px;
 }
 
 /* Logo */
-.logo i {
-  font-size: 40px; /* Larger, more prominent logo */
-  cursor: pointer;
-  letter-spacing: 2px; /* Spacing between letters for a modern feel */
-  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out; /* Smooth hover transition */
+
+.logo img {
+  margin-top: 15px;
+  width: 250px; /* Set width */
+  height: 150px; /* Maintain aspect ratio */
+  margin-left: -50px;
 }
 
-.logo i:hover {
-  transform: rotate(15deg); /* Rotate logo on hover */
-  color: #fff8e1; /* Soft color change on hover */
-}
+
 
 /* Dropdown container */
 .dropdown {
