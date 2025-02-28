@@ -9,6 +9,10 @@ body {
   background-color: #f4f4f4;
 }
 
+
+
+/* ---------------------------------------------------- BANNER NAME STYLES----------------------------------------------------------- */
+
 .banner {
   width: 90%;
   max-width: 800px;
@@ -22,11 +26,12 @@ body {
   align-items: center;
   border-left: 4px solid #007bff;
   border-right: 4px solid #007bff;
+  height: 120px;
 }
 
 .welcome-text {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
 }
 
@@ -35,6 +40,12 @@ body {
   font-weight: bold;
   color: #007bff;
 }
+.name-roli {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
 
 @media (max-width: 768px) {
   .banner {
@@ -66,6 +77,7 @@ body {
 
 
 
+/* ----------------------------------------------------------------------HEADER CONTAINER---------------------------------------------------------------- */
 
 /* Header container */
 header {
@@ -195,7 +207,7 @@ header {
 
 
 
-
+/* ---------------------------------------------------------------------------PROPOZIME STYLES---------------------------------------------------------- */
 /* Title Styling */
 .propozime-title {
   font-size: 4rem;
@@ -325,5 +337,243 @@ h3.question {
 
   .submit-btn {
     font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* ------------------------------------------------------------HOME PAGE STYLES--------------------------------------------------- */
+
+.container-homepage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100vw;
+  max-width: 600px;
+  height: 100vw;
+  max-height: 600px;
+  padding: 10px;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1A355E, #1a355e99);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px #1A355E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styling */
+.programi {
+  font-family: 'Open Sans', sans-serif; /* Clean, modern font with excellent readability */
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: #f5f8ff; /* Softer background for better readability */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.paragraph-1 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.paragraph-1 br {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0056b3;
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #006bb3;
+  margin-bottom: 20px;
+}
+
+.goals-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.goals-list li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #333;
+  padding-left: 25px;
+  position: relative;
+}
+
+.goals-list li:before {
+  content: "✔"; /* Adds a check mark icon before each goal */
+  color: #0099ff;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.paragraph-1 b {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .programi {
+      padding: 25px;
+      max-width: 95%;
+  }
+
+  .paragraph-1 {
+      font-size: 1.1rem;
+  }
+
+  .title {
+      font-size: 1.5rem;
+  }
+
+  .subtitle {
+      font-size: 1.3rem;
+  }
+
+  .goals-list li {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .programi {
+      padding: 15px;
+  }
+
+  .paragraph-1 {
+      font-size: 1rem;
+  }
+
+  .title {
+      font-size: 1.3rem;
+  }
+
+  .subtitle {
+      font-size: 1.2rem;
+  }
+
+  .goals-list li {
+      font-size: 1rem;
+  }
+}
+
+.paragraph-1 .underline-program{
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+
+
+
+/* -----------------------------------------------------------AXHENDA E EVENTEVE PAGE----------------------------------------------------------------------------------- */
+
+.container-axhenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto; /* Centers it horizontally */
+  align-items: center; /* Ensures items align in the center */
+}
+.container-axhenda .card {
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.container-axhenda .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container-axhenda .card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container-axhenda .card h3 {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1em;
+  font-weight: 600;
+  background: #007bff;
+  width: 100%;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@media (min-width: 600px) {
+  .container-axhenda {
+      max-width: 600px;
+
+  }
+  .container-axhenda .card {
+      width: 45%;
   }
 }
